@@ -1,0 +1,6 @@
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+export OUTREACH_PROJECT_ROOT="$HOME/src/github.com/getoutreach"
+eval "$(fasd --init auto)"
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
