@@ -3,4 +3,6 @@
 export OUTREACH_PROJECT_ROOT="$HOME/src/github.com/getoutreach"
 eval "$(fasd --init auto)"
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
+alias be="bundle exec"
+alias ber="bundle exec rails"
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
