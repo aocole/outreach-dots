@@ -1,8 +1,24 @@
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 export OUTREACH_PROJECT_ROOT="$HOME/src/github.com/getoutreach"
 eval "$(fasd --init auto)"
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 alias be="bundle exec"
 alias ber="bundle exec rails"
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+alias ls="ls -FG"
+
+# homebrew mysql 5.7
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
+
+# homebrew openssl
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
+# git update fork
+alias guf="git fetch upstream && git co master && git merge upstream/master && git push && git co -"
+
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
