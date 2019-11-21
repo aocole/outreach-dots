@@ -23,5 +23,6 @@ alias guf="git fetch upstream && git co master && git merge upstream/master && g
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # golang
+export PATH=$PATH:$(go env GOPATH)/bin
 export GOPRIVATE=github.com/getoutreach/*
 
