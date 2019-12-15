@@ -26,3 +26,5 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPRIVATE=github.com/getoutreach/*
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
