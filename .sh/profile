@@ -28,3 +28,5 @@ export GOPRIVATE=github.com/getoutreach/*
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+export VAULT_ADDR=https://vault.outreach.cloud
+
