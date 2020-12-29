@@ -31,5 +31,4 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # k8s devenv stuff
 export VAULT_ADDR=https://vault.outreach.cloud
 export KUBECONFIG="$HOME/.kube/config:$HOME/.outreach/kubeconfig.yaml"
-
-
+source <(devenv completion bash)
