@@ -33,5 +33,6 @@ export VAULT_ADDR=https://vault.outreach.cloud
 export KUBECONFIG="$HOME/.kube/config:$HOME/.outreach/kubeconfig.yaml"
 source <(devenv completion bash)
 alias dk="devenv k"
-alias dkb="devenv k -n bento1a"
+alias dkb="dk -n bento1a"
+alias dkgn="dk get namespaces"
 
