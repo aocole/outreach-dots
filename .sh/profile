@@ -35,4 +35,5 @@ source <(devenv completion bash)
 alias dk="devenv k"
 alias dkb="dk -n bento1a"
 alias dkgn="dk get namespaces"
+alias dkt="dk -n dsngtemporalcontrolplane--bento1a"
 
