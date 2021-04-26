@@ -4,7 +4,8 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export OUTREACH_PROJECT_ROOT="$HOME/src/github.com/getoutreach"
 eval "$(fasd --init auto)"
 alias be="bundle exec"
-alias ber="bundle exec rails"
+alias ber="bundle exec rake"
+alias outreach="ASDF_RUBY_VERSION=2.6.6 outreach"
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 alias ls="ls -FG"
 
