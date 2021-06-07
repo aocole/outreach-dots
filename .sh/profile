@@ -38,3 +38,7 @@ alias dkb="dk -n bento1a"
 alias dkgn="dk get namespaces"
 alias dkt="dk -n dsngtemporalcontrolplane--bento1a"
 
+# temporal
+export TEMPORAL_CLI_ADDRESS=temporal-frontend.dsngtemporalcontrolplane--bento1a.svc:7233
+export TEMPORAL_CLI_NAMESPACE=sync-domain
+
