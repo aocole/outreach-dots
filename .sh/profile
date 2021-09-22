@@ -42,3 +42,7 @@ alias dkt="dk -n dsngtemporalcontrolplane--bento1a"
 export TEMPORAL_CLI_ADDRESS=temporal-frontend.dsngtemporalcontrolplane--bento1a.svc:7233
 export TEMPORAL_CLI_NAMESPACE=sync-domain
 
+###start-marker|{"name":"orcsource","description":"Allows Outreach specific shell hooks"}
+source "$HOME/.outreach/outreachrc.sh"
+###end-marker
+
