@@ -1,3 +1,8 @@
+
+###start-marker|{"name":"orcsource","description":"Allows Outreach specific shell hooks"}
+source "$HOME/.outreach/outreachrc.sh"
+###end-marker
+
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
@@ -36,13 +41,10 @@ source <(devenv --skip-update completion bash)
 alias dk="devenv k"
 alias dkb="dk -n bento1a"
 alias dkgn="dk get namespaces"
+alias dkga="dk get pods --all-namespaces"
 alias dkt="dk -n dsngtemporalcontrolplane--bento1a"
 
 # temporal
 export TEMPORAL_CLI_ADDRESS=temporal-frontend.dsngtemporalcontrolplane--bento1a.svc:7233
 export TEMPORAL_CLI_NAMESPACE=sync-domain
-
-###start-marker|{"name":"orcsource","description":"Allows Outreach specific shell hooks"}
-source "$HOME/.outreach/outreachrc.sh"
-###end-marker
 
