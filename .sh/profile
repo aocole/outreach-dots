@@ -27,6 +27,7 @@ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 alias guf="git fetch upstream && git co master && git merge upstream/master && git push && git co -"
 
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:$OUTREACH_PROJECT_ROOT/dwf-tools/bin"
 
 # golang
 export PATH=$PATH:$(go env GOPATH)/bin
@@ -43,8 +44,10 @@ alias dkb="dk -n bento1a"
 alias dkgn="dk get namespaces"
 alias dkga="dk get pods --all-namespaces"
 alias dkt="dk -n dsngtemporalcontrolplane--bento1a"
+alias dkga="dk get pods --all-namespaces"
 
 # temporal
 export TEMPORAL_CLI_ADDRESS=temporal-frontend.dsngtemporalcontrolplane--bento1a.svc:7233
 export TEMPORAL_CLI_NAMESPACE=sync-domain
+
 
