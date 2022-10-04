@@ -21,7 +21,7 @@ export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
 export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
 
 # homebrew openssl
-export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+export LIBRARY_PATH=$LIBRARY_PATH:/opt/homebrew/opt/openssl/lib/
 
 # git update fork
 alias guf="git fetch upstream && git co master && git merge upstream/master && git push && git co -"
