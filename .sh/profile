@@ -11,7 +11,7 @@ eval "$(fasd --init auto)"
 alias be="bundle exec"
 alias ber="bundle exec rake"
 alias outreach="ASDF_RUBY_VERSION=2.6.6 outreach"
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 alias ls="ls -FG"
 
 # homebrew mysql 5.7
